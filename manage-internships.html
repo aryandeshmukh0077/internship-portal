@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manage internships</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body data-page="manage-internships">
+    <header class="topbar">
+      <nav class="nav">
+        <a class="brand" href="admin-dashboard.html">Internship Admin</a>
+        <div class="nav-links">
+          <a href="admin-dashboard.html">Dashboard</a>
+          <a href="candidates.html">Candidates</a>
+          <a href="manage-internships.html">Internships</a>
+          <a href="applications.html">Applications</a>
+          <a href="/" data-logout>Log out</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <h1>Manage internships</h1>
+        <p class="muted">Add a new opportunity or update an existing one.</p>
+      </section>
+
+      <div class="two-col">
+        <section class="panel">
+          <h2>Internship details</h2>
+
+          <form data-action="internship">
+            <div class="field">
+              <label for="title">Title</label>
+              <input id="title" name="title" required>
+            </div>
+
+            <div class="field">
+              <label for="company">Company</label>
+              <input id="company" name="company" required>
+            </div>
+
+            <div class="field">
+              <label for="location">Location</label>
+              <input id="location" name="location">
+            </div>
+
+            <div class="field">
+              <label for="description">Description</label>
+              <textarea id="description" name="description"></textarea>
+            </div>
+
+            <div class="field">
+              <label for="skills">Skills</label>
+              <input id="skills" name="skills">
+            </div>
+
+            <div class="field">
+              <label for="stipend">Stipend</label>
+              <input id="stipend" name="stipend">
+            </div>
+
+            <div class="field">
+              <label for="duration">Duration</label>
+              <input id="duration" name="duration">
+            </div>
+
+            <div class="field">
+              <label for="deadline">Deadline</label>
+              <input id="deadline" name="deadline" type="date" required>
+            </div>
+
+            <div class="actions">
+              <button id="internship-submit" type="submit">Add internship</button>
+              <button class="secondary" type="reset" onclick="this.form.dataset.id=''">Clear</button>
+            </div>
+
+            <p id="message" class="notice" role="status"></p>
+          </form>
+        </section>
+
+        <section>
+          <h2>Current internships</h2>
+          <div id="managed-internships"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "internship-candidate-management",
+  "version": "1.0.0",
+  "description": "A simple internship and candidate application management system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mysql2": "^3.11.5"
+  }
+}

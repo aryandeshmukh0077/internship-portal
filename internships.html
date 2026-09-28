@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Internships</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body data-page="internships">
+    <header class="topbar">
+      <nav class="nav">
+        <a class="brand" href="index.html">Internship Connect</a>
+        <div class="nav-links">
+          <a href="internships.html">Internships</a>
+          <a href="login.html">Candidate login</a>
+          <a href="register.html">Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <p class="eyebrow">FIND YOUR NEXT STEP</p>
+        <h1>Internship opportunities</h1>
+        <p class="muted">Explore open roles, find a good match, and check each deadline before applying.</p>
+      </section>
+
+      <section class="opportunity-heading">
+        <div>
+          <p class="eyebrow">CURRENT LISTINGS</p>
+          <h2>Open roles</h2>
+        </div>
+        <p class="results-count" id="results-count" aria-live="polite"></p>
+      </section>
+
+      <div id="internship-list" class="grid"></div>
+      <p id="message" class="notice" role="status"></p>
+    </main>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

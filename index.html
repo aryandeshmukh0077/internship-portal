@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Internship opportunities</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body data-page="home">
+    <header class="topbar">
+      <nav class="nav">
+        <a class="brand" href="/candidate/index.html">Internship Connect</a>
+        <div class="nav-links">
+          <a href="/candidate/internships.html">Internships</a>
+          <a href="/candidate/login.html">Candidate login</a>
+          <a href="/candidate/register.html">Register</a>
+          <a href="/admin/admin-login.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <p class="eyebrow">INTERNSHIP CONNECT <span>·</span> 2026</p>
+        <h1>Find an internship that moves you forward</h1>
+        <p class="muted">Explore roles from teams looking for fresh talent and practical ideas.</p>
+        <div class="actions">
+          <a class="button" href="/candidate/internships.html">Browse all internships</a>
+          <a class="button secondary" href="/candidate/register.html">Create candidate account</a>
+        </div>
+      </section>
+
+      <section class="opportunity-heading">
+        <div>
+          <p class="eyebrow">OPEN OPPORTUNITIES</p>
+          <h2>Roles worth a closer look</h2>
+        </div>
+        <p class="results-count" id="results-count" aria-live="polite"></p>
+      </section>
+
+      <div id="internship-list" class="grid"></div>
+      <p id="message" class="notice" role="status"></p>
+    </main>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

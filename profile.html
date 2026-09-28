@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Candidate profile</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body data-page="profile">
+    <header class="topbar">
+      <nav class="nav">
+        <a class="brand" href="index.html">Internship Connect</a>
+        <div class="nav-links">
+          <a href="internships.html">Internships</a>
+          <a href="applications.html">My applications</a>
+          <a href="profile.html">Profile</a>
+          <a href="/" data-logout>Log out</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <h1>Candidate profile</h1>
+        <p class="muted">Keep your contact and education details up to date.</p>
+      </section>
+
+      <section class="panel narrow">
+        <form data-action="profile">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel">
+          </div>
+
+          <div class="field">
+            <label for="education">Education</label>
+            <input id="education" name="education" placeholder="Degree, school, or current study">
+          </div>
+
+          <div class="field">
+            <label for="skills">Skills</label>
+            <textarea id="skills" name="skills" placeholder="Separate skills with commas"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="resume">Resume URL</label>
+            <input id="resume" name="resume" type="url" placeholder="https://...">
+            <span class="hint">Add a link to your resume. File upload is not included in this version.</span>
+          </div>
+
+          <button type="submit">Save profile</button>
+          <p id="message" class="notice" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

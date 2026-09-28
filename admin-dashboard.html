@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin dashboard</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body data-page="admin-dashboard">
+    <header class="topbar">
+      <nav class="nav">
+        <a class="brand" href="admin-dashboard.html">Internship Admin</a>
+        <div class="nav-links">
+          <a href="admin-dashboard.html">Dashboard</a>
+          <a href="candidates.html">Candidates</a>
+          <a href="manage-internships.html">Internships</a>
+          <a href="applications.html">Applications</a>
+          <a href="/" data-logout>Log out</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <h1>Admin dashboard</h1>
+        <p class="muted">Current recruitment activity.</p>
+      </section>
+
+      <section class="stat-grid">
+        <div class="stat">Internships<strong id="internship-count">—</strong></div>
+        <div class="stat">Candidates<strong id="candidate-count">—</strong></div>
+        <div class="stat">Applications<strong id="application-count">—</strong></div>
+      </section>
+
+      <section>
+        <h2>Recent applications</h2>
+        <div id="application-table"></div>
+        <p class="actions">
+          <a class="button secondary" href="applications.html">View all applications</a>
+        </p>
+      </section>
+
+      <p id="message" class="notice" role="status"></p>
+    </main>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

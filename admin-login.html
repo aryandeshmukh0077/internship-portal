@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin login</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body data-page="admin-login">
+    <header class="topbar">
+      <nav class="nav">
+        <a class="brand" href="/candidate/index.html">Internship Connect</a>
+        <div class="nav-links">
+          <a href="/candidate/index.html">Candidate site</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="panel narrow">
+        <h1>Admin login</h1>
+
+        <form data-action="login" data-role="admin">
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="username" required>
+          </div>
+
+          <div class="field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required>
+          </div>
+
+          <button type="submit">Log in</button>
+          <p id="message" class="notice" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>

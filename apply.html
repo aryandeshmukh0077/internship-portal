@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apply for internship</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body data-page="apply">
+    <header class="topbar">
+      <nav class="nav">
+        <a class="brand" href="index.html">Internship Connect</a>
+        <div class="nav-links">
+          <a href="internships.html">Internships</a>
+          <a href="applications.html">My applications</a>
+          <a href="profile.html">Profile</a>
+          <a href="/" data-logout>Log out</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-heading">
+        <h1>Review internship</h1>
+        <p class="muted">Confirm the opportunity before submitting your application.</p>
+      </section>
+
+      <section id="apply-details" class="panel narrow"></section>
+
+      <form class="narrow" data-action="apply">
+        <button type="submit">Submit application</button>
+        <p id="message" class="notice" role="status"></p>
+      </form>
+    </main>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
